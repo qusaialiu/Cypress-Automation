@@ -7,8 +7,8 @@ describe('Cart Functionalities', () => {
     })
     beforeEach(() => {
         cy.visit("/")
-        cy.get("#search").type("shirt" + "{enter}");
-        cy.contains("a", "Radiant Tee").click();
+        cy.get("#search").type("shirt" + "{enter}")
+        cy.contains("a", "Radiant Tee").click()
         cy.get("#option-label-size-143-item-167").click()
         cy.get("#option-label-color-93-item-56").first().click()
         cy.get("#qty").clear().type("2")
