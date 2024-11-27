@@ -1,4 +1,7 @@
 /// <reference types ="cypress" />
+
+
+// Additional Login 
 describe('Submit Review', () => {
     before(() => {
         cy.visit("/")
@@ -7,9 +10,7 @@ describe('Submit Review', () => {
         cy.get("#pass").first().type("qusaiali@1234")
         cy.get("#send2").first().click()
     })
-    beforeEach(() => {
-        cy.log("this is befor each")
-    })
+
 
     it('Validate that the user can submit a review on the product page', () => {
         cy.visit("/")
@@ -25,12 +26,6 @@ describe('Submit Review', () => {
         cy.get(".logged-in").first().should("contain", "Welcome, qusaiaa ali!")
     })
 
-    after(() => {
-        cy.log("this is after all hook")
-    })
 
-    afterEach(() => {
-        cy.log("This is after Each hook")
-    })
 
 })
