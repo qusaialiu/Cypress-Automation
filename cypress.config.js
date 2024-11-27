@@ -5,6 +5,13 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "https://magento.softwaretestingboard.com/"
+    baseUrl: "https://magento.softwaretestingboard.com/",
+    video: true,
+    videosFolder: "MyVedioFolder",
+    trashAssetsBeforeRuns: false,
+    videoCompression: 0
+
+
+
   },
 });
